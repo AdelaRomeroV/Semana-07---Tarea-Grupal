@@ -10,11 +10,7 @@ public class EnemyRangeA : MonoBehaviour
     private void Start()
     {
         player = GameObject.Find("Player");
-    }
-
-    private void Update()
-    {
-        Invoke("Disparo", 5f);
+        Invoke("Disparo", 2.5f);
     }
 
     void Disparo()
@@ -22,6 +18,7 @@ public class EnemyRangeA : MonoBehaviour
         if(player != null)
         {
             Instantiate(prefab, gameObject.transform);
+            Invoke("Disparo", 2.5f);
         }
     }
 }
