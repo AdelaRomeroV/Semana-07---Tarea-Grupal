@@ -152,7 +152,7 @@ Transform:
   m_GameObject: {fileID: 144546772}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.49, y: 0, z: -0.42}
+  m_LocalPosition: {x: 0.49, y: 0, z: 0.36}
   m_LocalScale: {x: 0.19852613, y: 0.26608527, z: 1.1439928}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -488,7 +488,7 @@ Transform:
   m_GameObject: {fileID: 362058814}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.929937, y: 0.5634661, z: -4.2215977}
+  m_LocalPosition: {x: 5.929937, y: 0.5634661, z: -14.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -637,7 +637,7 @@ Transform:
   m_GameObject: {fileID: 592488565}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.491}
+  m_LocalPosition: {x: 0, y: 0, z: 0.55}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -705,8 +705,9 @@ GameObject:
   - component: {fileID: 1269747520}
   - component: {fileID: 1269747519}
   - component: {fileID: 1269747518}
+  - component: {fileID: 1269747523}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -817,13 +818,30 @@ Transform:
   m_GameObject: {fileID: 1269747517}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.929937, y: 1.53, z: -4.2215977}
+  m_LocalPosition: {x: 5.929937, y: 1.53, z: -14.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 144546773}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1269747523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269747517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f7090fd9ba922a4297ac366ec22bc01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet:
+  - {fileID: 4248912621648383224, guid: d1494470e8521a3499982710ef52918d, type: 3}
+  - {fileID: 2085961055386145525, guid: f1e0756580b183247bb74aa8600b410a, type: 3}
+  shootPoint: {fileID: 592488566}
+  CountBullet: 10
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
