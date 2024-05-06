@@ -24,6 +24,14 @@ public class PlayerLife : MonoBehaviour
         if (collision.gameObject.CompareTag("BulletEnemy"))
         {
             life -= collision.gameObject.GetComponent<Damage>().damage;
+        }        
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            life -= collision.gameObject.GetComponent<Damage>().damage;
         }
     }
 

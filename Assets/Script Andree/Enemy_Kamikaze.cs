@@ -30,8 +30,6 @@ public class Enemy_Kamikaze : MonoBehaviour
     {
         if (collision.collider.CompareTag("Player"))
         {
-            //QUITAR VIDA AL PLAYER
-
             Destroy(gameObject);
         }
     }
