@@ -444,7 +444,7 @@ PrefabInstance:
     - target: {fileID: 6445754419604831518, guid: f5fd2255eeea96b4a93c7c2adaf467e3,
         type: 3}
       propertyPath: m_TagString
-      value: Health
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -517,7 +517,7 @@ PrefabInstance:
     - target: {fileID: 4797014056235618919, guid: 65122c4c738e14240921cf7f0c010205,
         type: 3}
       propertyPath: m_TagString
-      value: Health
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -852,7 +852,6 @@ GameObject:
   - component: {fileID: 1556604233}
   - component: {fileID: 1556604232}
   - component: {fileID: 1556604231}
-  - component: {fileID: 1556604239}
   - component: {fileID: 1556604238}
   m_Layer: 0
   m_Name: Player
@@ -1020,18 +1019,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 6
---- !u!114 &1556604239
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1556604230}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e832fd18c896e1468506986bc50bc7d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2055679544
 GameObject:
   m_ObjectHideFlags: 0
@@ -1045,7 +1032,7 @@ GameObject:
   m_Layer: 0
   m_Name: 'Spawn '
   m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1061,12 +1048,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddec1d1498105df418d160f212c2fb95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Counter: 5
+  Counter: 0
   positionX: 0
   positionZ: 0
   ItemSpawner:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 4797014056235618919, guid: 65122c4c738e14240921cf7f0c010205, type: 3}
+  - {fileID: 7065506266854915203, guid: 70774fce156b221498074593c49c8a5a, type: 3}
 --- !u!4 &2055679546
 Transform:
   m_ObjectHideFlags: 0
@@ -1076,7 +1063,7 @@ Transform:
   m_GameObject: {fileID: 2055679544}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.2201972, y: 0.8, z: -33.1}
+  m_LocalPosition: {x: 12.69, y: 4.89, z: -33.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerLife : MonoBehaviour
 {
-
     public int life;
 
     private void Update()
@@ -19,4 +18,14 @@ public class PlayerLife : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    private void OnTriggerEnter(Collider collision)
+    {
+        if (collision.gameObject.CompareTag("BulletEnemy"))
+        {
+            life -= collision.gameObject.GetComponent<Damage>().damage;
+        }
+    }
+
+
 }

@@ -13,10 +13,11 @@ GameObject:
   - component: {fileID: 2837985540250145099}
   - component: {fileID: 910052312233251883}
   - component: {fileID: 8395609090559486355}
+  - component: {fileID: 2742484714480467684}
   - component: {fileID: -1066163228531170405}
   m_Layer: 0
   m_Name: BalaA
-  m_TagString: Untagged
+  m_TagString: BulletEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -120,6 +121,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidad: 5
+--- !u!114 &2742484714480467684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5209872758784544258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67336a7d809929b4383eea8192d4471c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 2
 --- !u!54 &-1066163228531170405
 Rigidbody:
   m_ObjectHideFlags: 0
